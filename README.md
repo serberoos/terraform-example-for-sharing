@@ -25,10 +25,10 @@ yum -y install unzip*
 
 ### zip 암호화
 ```
-zip -P "암호" 압축파일명.zip "압축할 대상"
+zip -r -e {file_name}.zip {target_directory}/
 ```
 
 ### zip 복호화
 ```
-unzip -P "암호" 압축파일명.zip "압축할 대상"
+unzip {file_name}.zip # 이후 암호 입력
 ```
